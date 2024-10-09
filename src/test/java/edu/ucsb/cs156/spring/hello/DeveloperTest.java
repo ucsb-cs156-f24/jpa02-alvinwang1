@@ -27,12 +27,23 @@ public class DeveloperTest {
         assertEquals("Alvin", Developer.getName());
     }
 
-    // TODO: Add additional tests as needed to get to 100% jacoco line coverage, and
     // 100% mutation coverage (all mutants timed out or killed)
     @Test
     public void getGithubId_returns_correct_githubId() {
-        // TODO: Replace Chris G. with your name as shown on
-        // <https://bit.ly/cs156-f24-teams>
         assertEquals("alvinwang1", Developer.getGithubId());
     }
+
+    @Test
+    public void getTeam_returns_team_with_correct_name() {
+        Team t = Developer.getTeam();
+        assertEquals("f24-04", t.getName());
+        assertTrue(t.getMembers().contains("Alvin"),"Team should contain Alvin");
+        assertTrue(t.getMembers().contains("Michael"),"Team should contain Michael");
+        assertTrue(t.getMembers().contains("Jackie"),"Team should contain Jackie");
+        assertTrue(t.getMembers().contains("Nikhil"),"Team should contain Nikhil");
+        assertTrue(t.getMembers().contains("Piyush"),"Team should contain Piyush");
+        assertTrue(t.getMembers().contains("Nilay"),"Team should contain Nilay");
+
+    }
+
 }
