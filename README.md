@@ -2,7 +2,7 @@
 
 Repo: https://github.com/ucsb-cs156-f24/jpa02-alvinwang1
 
-Deployed at: https://jpa02-alvinwang1-me.dokku-xx.cs.ucsb.edu
+Deployed at: https://jpa02-alvinwang1.dokku-04.cs.ucsb.edu
 
 
 # About this repo
